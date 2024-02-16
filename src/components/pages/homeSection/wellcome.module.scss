@@ -1,0 +1,101 @@
+.Wellcome {
+  width: 100%;
+  .content {
+    position: relative;
+    .intraduse {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 767px) {
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 360px) {
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        @media (max-width: 360px) {
+          width: 100%;
+          max-width: 340px;
+          position: relative;
+          left: 10px;
+        }
+      }
+
+      .intraduse_title {
+        width: 100%;
+        max-width: 545px;
+        height: auto;
+
+        h1 {
+          font-weight: 600;
+
+          font-size: clamp(30px, 8vw, 67px);
+
+          @media (max-width: 767px) {
+            position: relative;
+            left: 13px;
+          }
+          @media (max-width: 360px) {
+            position: relative;
+            left: 0px;
+          }
+        }
+      }
+
+      .get_started {
+        display: flex;
+
+        img {
+          padding-block: 30px;
+          position: relative;
+          top: 40px;
+          right: 30px;
+
+          width: 100%;
+
+          @media (max-width: 1280px) {
+            display: none;
+            left: 0;
+            top: 0;
+          }
+        }
+        .button {
+          button {
+            position: relative;
+            top: 61px;
+            right: 40px;
+
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0%;
+
+            @media (max-width: 1280px) {
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+    .firstFrame {
+      display: flex;
+      padding-block: 103px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
